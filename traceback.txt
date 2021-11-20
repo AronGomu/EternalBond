@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script/chapter1/chapter1_6_eat_lunch.rpy", line 193, in script
+    jump chapter1_7_intro
+ScriptError: could not find label 'chapter1_7_intro'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script/chapter1/chapter1_6_eat_lunch.rpy", line 193, in script
+    jump chapter1_7_intro
+  File "renpy/ast.py", line 1751, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'chapter1_7_intro'.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.6.1693
+Eternal Bonds 1.0
+Mon Nov 15 13:07:26 2021
