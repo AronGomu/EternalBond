@@ -21,7 +21,22 @@ label chapter1_nivi_discussion_1:
 
     "She was looking straight into my eyes, inquisitive."
 
-    me "I'm looking for a room to stay."
+    menu:
+        "Hum..."
+
+        "Going straight to the point.":
+
+            me "I'm looking for a room to stay."
+
+        "Asking about her.":
+            me "Are you the innkeeper ?"
+
+            nivi "Yes."
+
+            me "Hum... Okay."
+
+            me "I'm looking for a room to stay."
+
 
     nivi "How long ?"
 
@@ -57,12 +72,28 @@ label chapter1_nivi_discussion_1:
 
     "Is she making fun of me ?"
 
-    nivi "..."
+    menu:
+        "Do I ask what's happening ?"
 
-    show nivi maid basic7 brows2 eyes4 mouth14 closed mouth open eyes
-    with Dissolve(1.0)
+        "Yes.":
 
-    nivi "No, actually, there is a thing."
+            me "Are there anything troubling you ?"
+
+            nivi "..."
+
+            show nivi maid basic7 brows2 eyes4 mouth14 closed mouth open eyes
+            with Dissolve(1.0)
+
+            nivi "Actually yes."
+
+        "No let's wait...":
+
+            nivi "..."
+
+            show nivi maid basic7 brows2 eyes4 mouth14 closed mouth open eyes
+            with Dissolve(1.0)
+
+            nivi "No, actually, there is a thing."
 
     nivi "Why don't you know how long ?"
 
@@ -209,9 +240,13 @@ label chapter1_nivi_discussion_1:
 
     "I'll ask about that later."
 
-    me "Are you the innkeeper here ?"
+    me "Are you managing the inn alone ?"
 
-    nivi "I am. We're managing the inn with my father."
+    nivi "No."
+    
+    nivi "We're managing the inn with my father."
+
+    nivi "So me and my father."
 
     me "I see, familial establishment ?"
 

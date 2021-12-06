@@ -1,6 +1,6 @@
 ﻿# Effects
 
-define flash = Fade(0.2, 0, 0.2, color="#FFFFFF")
+define uncensored = True
 
 
 # Declare characters used by this game. The color argument colorizes the

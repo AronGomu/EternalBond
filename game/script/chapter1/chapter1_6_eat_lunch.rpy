@@ -24,7 +24,31 @@ label chapter1_eat_lunch:
 
     nf "Hello, sir. Are you Fynn Sceite, the new client ?"
 
-    me "I am."
+    menu:
+
+        "How to answer ?"
+
+        "Clearly":
+
+            me "I am."
+
+        "Jokingly":
+
+            me "Yeah, I'm the new frog that came into town."
+
+            nf "Frog ?"
+
+            nf "Oh right ! Haha !"
+
+        "Awkwardly":
+            
+            me "Uh..."
+
+            me "I guess ?"
+
+            nf "Haha ! Don't worry."
+            
+            nf "I don't bite."
 
     "He give his hand and we shake hands."
 
@@ -189,3 +213,5 @@ label chapter1_eat_lunch:
     with Fade(3.0, 4.0, 0.0)
 
     $ renpy.movie_cutscene("gui/opening.webm")
+
+    jump chapter2_1_the_deal
