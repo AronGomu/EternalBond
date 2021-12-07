@@ -83,13 +83,15 @@ label chapter2_4_choice1_stay_more:
 
     "She answer with her own waving."
 
-    play music "audio/sfx/girl heavy breathing.ogg" fadein 2.0 fadeout 2.0
-
-    play music "audio/music/Lurking Around.mp3" fadein 3.0 volume 0.5
+    stop music fadeout 3.0
 
     "She finally gets to me."
 
     show nivi maid h-caressing standing afterglow with Dissolve(0.5)
+
+    play longvoice "audio/sfx/voice/nivi/nivi after climax.ogg" fadein 10.0
+
+    play music "audio/music/Lurking Around.mp3" fadein 5.0 volume 0.5
 
     nivi "You..."
 
@@ -108,6 +110,8 @@ label chapter2_4_choice1_stay_more:
     nivi "I found you."
 
     nivi "And we are at the gate."
+
+    stop longvoice fadeout 1.0
 
     show nivi maid happy2 brows0 eyes17 mouth1 closed mouth open eyes with Dissolve(0.1)
 

@@ -15,6 +15,12 @@ label chapter2_6_the_consequence:
 
     "..."
 
+    "I wasn't like that before."
+
+    "But with the time and the experiences I seem to harden."
+
+    "..."
+
     "Hope she's good."
 
     "..."
@@ -57,9 +63,9 @@ label chapter2_6_the_consequence:
 
     play sound "audio/sfx/Door Open.ogg"
 
-    pause
+    pause 1.0
 
-    show nivi maid basic18 brows2 eyes0 mouth5 closed mouth open eyes advert with Dissolve(0.1)
+    show nivi maid basic18 brows2 eyes0 mouth5 closed mouth open eyes advert with Dissolve(1)
 
     nivi "It's me."
 
@@ -97,11 +103,11 @@ label chapter2_6_the_consequence:
 
     show nivi maid basic28 brows2 eyes0 mouth0 closed mouth open eyes with Dissolve(0.1)
 
-    nivi "Still in this ?"
+    nivi "You're still about this ?"
 
     show nivi maid basic28 brows2 eyes0 mouth0 closed mouth closed eyes with Dissolve(0.1)
 
-    play sound "audio/sfx/female sigh.wav" volume 0.2
+    play sound "audio/sfx/voice/nivi/nivi sigh 1 temps.ogg" volume 0.2
 
     pause
 

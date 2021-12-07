@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script/chapter2/chapter2_6_the_consequence.rpy", line 80: expected 'image_name_component' not found.
-    show show nivi maid basic18 brows2 eyes0 mouth5 closed mouth open eyes advert with Dissolve(0.1)
-        ^
+File "game/script/chapter2/chapter2_5_the_incident.rpy", line 228: expected end of line
+    voice nivi Aaah aaaah
+               ^
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Mon Dec  6 13:35:23 2021
+Mon Dec  6 18:58:02 2021

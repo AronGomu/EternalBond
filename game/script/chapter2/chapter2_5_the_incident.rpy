@@ -101,14 +101,16 @@ label chapter2_5_the_incident:
     stop music fadeout 0.5
 
     play sound "audio/sfx/Swoosh.mp3" volume 0.3
-
+    play longvoice "audio/sfx/voice/nivi/nivi Aaah.ogg"
     scene bg trunk
     show cg nivi chapter 2 rape 01
     with Fade(.25, 0, .75, color="#fff")
 
+    pause
+
     "I pinned Nivi on a tree."
 
-    play music "audio/music/Sad And Alone.mp3" fadein 10.0
+    play music "audio/music/Sad And Alone.mp3" volume 0.5 fadein 10.0
 
     nivi "W-what ?"
 
@@ -128,9 +130,15 @@ label chapter2_5_the_incident:
 
     show cg nivi chapter 2 rape 03 with Dissolve(0.1)
 
+    play longvoice "audio/sfx/voice/nivi/nivi struggle.ogg"
+
+    nivi "{i}Struggle.{/i}"
+
     nivi "I can't move..."
 
     me "Well I kinda block you."
+
+    play longvoice "audio/sfx/voice/nivi/nivi ugh.ogg"
 
     nivi "...ugh..."
 
@@ -142,7 +150,17 @@ label chapter2_5_the_incident:
 
     me "Obey and everything's gonna be alright."
 
-    me "Call for help and nobody gonna come find your corpse."
+    me "Call for help and nobody's gonna come find your corpse."
+
+    show cg nivi chapter 2 rape 05 with Dissolve(0.1)
+
+    nivi "Why are you doing this ?"
+
+    me "Why wouldn't I ?"
+
+    me "I just take every opportunities presented to me."
+
+    me "And you were kind enough to present it to me."
 
     show cg nivi chapter 2 rape 04 with Dissolve(0.1)
 
@@ -154,43 +172,47 @@ label chapter2_5_the_incident:
 
     me "Now let me feel those..."
 
-    show cg nivi chapter 2 rape 05 with Dissolve(0.1)
-
-    nivi "What ? Stop !"
-
-    show cg nivi chapter 2 rape 06 with Dissolve(0.1)
-
-    nivi "Aaah~"
-
-    me "Hum..."
-
-    me "Not too big."
-
-    me "Not the best though."
-
-    me "I don't know why but women feels way sexier dressed than nude."
-
-    me "Touching your tits like that is...{w} nice."
-
-    show cg nivi chapter 2 rape 07 with Dissolve(0.1)
-
-    nivi "You twisted fuck !"
-
-    me "..."
-
-    me "Starting to be angry ?"
-
-    me "Loving it !"
-
-    me "But you know."
-
-    me "It's only the beginning."
-
     if uncensored:
+
+        show cg nivi chapter 2 rape 05 with Dissolve(0.1)
+
+        nivi "What ? Stop !"
+
+        show cg nivi chapter 2 rape 06 with Dissolve(0.1)
+
+        play longvoice "audio/sfx/voice/nivi/nivi Aaah aaaah.ogg"
+
+        nivi "Aaah~"
+
+        me "Hum..."
+
+        me "Not too big."
+
+        me "Not the best though."
+
+        me "I don't know why but women feels way sexier dressed than nude."
+
+        me "I like starting by touching here and there..."
+
+        show cg nivi chapter 2 rape 07 with Dissolve(0.1)
+
+        nivi "You twisted fuck !"
+
+        me "..."
+
+        me "Starting to be angry ?"
+
+        me "Loving it !"
+
+        me "But you know."
+
+        me "It's only the beginning."
 
         me "Now let's see what's behind !"
 
         show cg nivi chapter 2 rape 08 with Dissolve(0.1)
+
+        play longvoice "audio/sfx/voice/nivi/nivi Aah !.ogg"
 
         nivi "Aaaah !"
 
@@ -202,7 +224,7 @@ label chapter2_5_the_incident:
 
         show cg nivi chapter 2 rape 10 with Dissolve(0.1)
 
-        nivi "Aaaah~"
+        play longvoice "audio/sfx/voice/nivi/nivi Aaah aaaah.ogg"
 
         show cg nivi chapter 2 rape 11 with Dissolve(0.1)
 
@@ -216,6 +238,8 @@ label chapter2_5_the_incident:
 
         show cg nivi chapter 2 rape 12
         with Dissolve(0.1)
+
+        play longvoice "audio/sfx/voice/nivi/nivi Aah !.ogg"
 
         nivi "Aaah !"
 
@@ -258,7 +282,9 @@ label chapter2_5_the_incident:
         me "So ?"
 
         window hide
-        show cg nivi chapter 2 rape 19 with Dissolve(1.0)
+        play sound "audio/sfx/Swoosh.mp3" volume 0.3
+        show cg nivi chapter 2 rape 19
+        with Fade(1, 0, 1, color="#fff")
 
         pause
 
@@ -278,9 +304,12 @@ label chapter2_5_the_incident:
 
         me "Let me relax a bit."
 
+        play sound "audio/sfx/Swoosh.mp3" volume 0.3
         window hide
         show cg nivi chapter 2 rape 21
-        with Fade(.25, 0, .75, color="#fff")
+        with Fade(1, 0, 1, color="#fff")
+
+        play longvoice "audio/sfx/voice/nivi/nivi sucking.ogg" loop
 
         pause
 
@@ -309,6 +338,8 @@ label chapter2_5_the_incident:
 
         me "Okay stop."
 
+        stop longvoice
+
         window hide
         show cg nivi chapter 2 rape 23 with Dissolve(0.5)
 
@@ -321,7 +352,7 @@ label chapter2_5_the_incident:
         me "Now we get to the good parts."
 
         window hide
-
+        play sound "audio/sfx/Swoosh.mp3" volume 0.3
         hide cg
         show nivi chapter 02 rape doggy pre insertion idle
         with Fade(0.75, 0, 0.75, color="#fff")
@@ -364,37 +395,40 @@ label chapter2_5_the_incident:
 
         me "Starting now !"
         
-        window hide 
+        window hide
+
+        play longvoice "audio/sfx/voice/nivi/nivi penetration putting in.ogg"
 
         show nivi chapter 02 rape doggy insertion
 
-        pause 1.5
+        pause 2.0
 
         show nivi chapter 02 rape doggy inserted
 
+        pause 1.0
+
         window show
 
-        nivi "Aaaaah !"
-
-        show nivi chapter 02 doggy nivi rape slow
+        play longvoice "audio/sfx/voice/nivi/nivi after climax.ogg" loop
         
         me "Oh~ yeah~"
 
-        show nivi chapter 02 doggy nivi rape fast
-
         me "That's what I'm talking about."
-
-        show nivi chapter2 rape doggy before climax
 
         me "A nice and tight pussy."
 
-        show nivi chapter 02 doggy nivi rape come outside
+        me "Let's get started !"
 
-        nivi "Aaaah~{nw}"
+        nivi "No ! Stop !"
 
-        show nivi chapter 02 rape doggy come outside end
-        with Fade(.25, 0.5, .75, color="#fff")
+        window hide
+        show nivi chapter 02 doggy nivi rape slow
+        with Fade(.75, 0, .75, color="#fff")
+        play longvoice "audio/sfx/voice/nivi/nivi penetration slow.ogg" loop
+        pause
+        window show
 
+        nivi "Aaah..."
 
         me "That's it girl !"
 
@@ -410,31 +444,70 @@ label chapter2_5_the_incident:
 
         me "Oooh !"
 
+        window hide
+        show nivi chapter 02 doggy nivi rape fast
+        with Fade(.75, 0, .75, color="#fff")
+        play longvoice "audio/sfx/voice/nivi/nivi penetration fast.ogg" loop
+        pause
+        window show
+
+        me "I like this pace !"
+
+        nivi "Are you-"
+
+        nivi "Are you really gonna do it ?"
+
+        me "Do what ?"
+
+        nivi "Come-"
+
+        nivi "Come inside me ?"
+
+        me "Hum..."
+
+        window hide
+        show nivi chapter2 rape doggy before climax
+        with Fade(.75, 0, .75, color="#fff")
+        play longvoice "audio/sfx/voice/nivi/nivi climax.ogg" loop
+        pause
+        window show
+
+        me "I'm still thinking about it."
+
+        me "..."
+
         me "It's comming !"
 
         nivi "Don't !"
 
         nivi "Not inside !"
 
-        me "As you wish !"
-
-        me "I'm cum{nw}"
+        me "I'm cum-{nw}"
         
-        # show bukkake
+        show nivi chapter 02 doggy nivi rape come outside
 
-        me "ming !"
+        play longvoice "audio/sfx/voice/nivi/nivi Aaah aaaah.ogg"
+
+        nivi "Aaaah~{nw}"
+
+        show nivi chapter 02 rape doggy come outside end
+        with Fade(1, 0.5, 1, color="#fff")
+
+        play longvoice "audio/sfx/voice/nivi/nivi after climax.ogg" loop fadein 5.0
+
+        me "-ming !"
 
         nivi "..."
-
-        nivi "It's... {w} disgusting..."
-
-        nivi "It's everywhere..."
         
         me "Because it was the first time, I did you a favor."
 
-        me "But seing breathless women lying sprayed with cum is a always a sight to behold."
+        me "Seeing a breathless women lying sprayed in cum is a always a sight to behold though."
+
+        stop music fadeout 5.0
         
-        me "But don't mistake my actions."
+        me "So don't mistake my actions."
+
+        stop longvoice fadeout 3.0
 
         me "Next time it will be inside."
 
@@ -442,9 +515,9 @@ label chapter2_5_the_incident:
 
     play sound "audio/sfx/Swoosh.mp3" volume 0.3
 
-    scene bg forest
+    scene bg forest edge
     show cg nivi chapter 2 rape 02
-    with Fade(.25, 0, .75, color="#fff")
+    with Fade(1, 0, 1, color="#fff")
 
     play music "audio/ambient/Forest.ogg"
 
@@ -481,17 +554,23 @@ label chapter2_5_the_incident:
 
     show nivi maid basic28 brows2 eyes0 mouth0 closed mouth closed eyes with Dissolve(0.1)
 
+    me "What are you ?"
+
+    me "A kid or an adult ?"
+
     me "Don't you understand the danger you put yourself in ?"
 
     nivi "..."
 
     me "..."
 
-    me "Sorry about that."
-
     me "I may have been too harsh."
 
+    me "Sorry about that."
+
     nivi "..."
+
+    show nivi maid basic28 brows2 eyes0 mouth0 closed mouth open eyes with Dissolve(0.1)
 
     nivi "It's fine."
 
@@ -499,13 +578,13 @@ label chapter2_5_the_incident:
 
     me "Let's go b..."
 
-    show nivi maid basic28 brows2 eyes0 mouth0 closed mouth open eyes with Dissolve(0.1)
-
     nivi "Wait."
 
     nivi "Can we stay here just a minute ?"
 
     me "What ?"
+
+    show nivi maid basic28 brows2 eyes0 mouth0 closed mouth closed eyes with Dissolve(0.1)
 
     nivi "Need to process."
 
@@ -517,7 +596,7 @@ label chapter2_5_the_incident:
 
     "......"
 
-    play sound "audio/sfx/female sigh.wav" volume 0.2
+    play sound "audio/sfx/voice/nivi/nivi sigh 2 temps.ogg" volume 0.2
 
     pause
 
@@ -532,6 +611,8 @@ label chapter2_5_the_incident:
     me "About the drink tonight..."
 
     me "We can report that to another day."
+
+    show nivi maid basic28 brows6 eyes0 mouth6 closed mouth open eyes with Dissolve(0.1)
 
     stop music fadeout 1.0
 

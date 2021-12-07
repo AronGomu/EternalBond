@@ -1,4 +1,7 @@
-﻿# Effects
+﻿init python:
+    renpy.music.register_channel("longvoice", "voice", False)
+
+# Effects
 
 define uncensored = True
 

@@ -31,6 +31,8 @@ label chapter2_4_choice1_goback:
 
     nivi "{cps=15}FYNN !!!!!{/cps}"
 
+    play longvoice "audio/sfx/voice/nivi/nivi after climax.ogg" fadein 10.0
+
     play music "audio/music/Lurking Around.mp3" fadein 3.0 volume 0.8
 
     show nivi maid h-caressing standing afterglow with Dissolve(0.1)
@@ -42,6 +44,8 @@ label chapter2_4_choice1_goback:
     nivi "God ! You're there !"
 
     nivi "I though I lost you."
+
+    stop longvoice fadeout 2.0
 
     me "Hum..."
 

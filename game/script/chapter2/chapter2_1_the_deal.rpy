@@ -1,9 +1,12 @@
 label chapter2_1_the_deal:
 
     play music "audio/music/First Steps.mp3" fadein 3.0 fadeout 3.0 volume 0.5
+
+    window hide
+    scene bg chapter1 with Fade(0.5, 0, 5)
+    window show
     
-    scene  bg bedroom inn day
-    with Fade(0.5, 1.0, 4.0)
+    scene  bg bedroom inn day with Fade(1, 0, 3)
 
     "..."
 
@@ -195,7 +198,7 @@ label chapter2_1_the_deal:
 
     "But if they force themselves to me, there are no reasons to not take them."
 
-    "I'm not crazy.{w} For now."
+    "I'm not crazy.{w} Not anymore."
 
     me "Sure then."
 

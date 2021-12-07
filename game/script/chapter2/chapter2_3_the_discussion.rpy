@@ -140,6 +140,14 @@ label chapter2_3_the_discussion:
     me "You have a point."
 
     "..."
+
+    "Yeah."
+
+    "I don't really want to have her stare me like that for the entire lunch."
+
+    "I need to find something."
+
+    "..."
     
     me "Why do you wear this maid's uniform ?"
 
@@ -148,6 +156,8 @@ label chapter2_3_the_discussion:
     nivi "Maid ?"
 
     nivi "Those are my work clothes."
+
+    "Hah ?"
 
     me "Yeah but your father said you had nothing to work on today."
 
@@ -160,6 +170,10 @@ label chapter2_3_the_discussion:
     show nivi maid basic28 brows6 eyes0 mouth6 closed mouth open eyes with Dissolve(0.1)
 
     nivi "Why do you ask that ?"
+
+    "Oof..."
+
+    "I guess I'm gonna be honest."
 
     me "I don't know...{w} just trying to have a discussion going I guess."
 
@@ -183,6 +197,10 @@ label chapter2_3_the_discussion:
     
     nivi "That's who I am !"
 
+    "Bingo !"
+
+    "Let's proceed to this emotionnaly driven discussion now !"
+
     show nivi maid pose1 brows14 eyes8 mouth10 closed mouth open eyes with Dissolve(0.1)
 
     me "That's not really a answer."
@@ -191,7 +209,7 @@ label chapter2_3_the_discussion:
 
     show nivi maid angry1 brows8 eyes9 mouth8 open mouth open eyes with Dissolve(0.1)
 
-    nivi "Why do you call it a maid costume ?"
+    nivi "Why do you call it a maid costume anyway ?"
 
     me "From where I comme this ressembles a maid costume."
 
@@ -207,7 +225,7 @@ label chapter2_3_the_discussion:
 
     nivi "How's that ?"
 
-    $ renpy.music.set_volume(0.0, delay=0, channel='music')
+    $ renpy.music.set_volume(0.2, delay=0, channel='music')
     play sound "audio/sfx/Swoosh.mp3" volume 0.3
     show francis shadow #with Dissolve(0.1)
     show nivi maid surprise2 brows12 eyes22 mouth14 open mouth open eyes at left #with moveinleft
@@ -217,7 +235,7 @@ label chapter2_3_the_discussion:
 
     francis "Dinner served !"
 
-    $ renpy.music.set_volume(0.5, delay=0, channel='music')
+    $ renpy.music.set_volume(1.0, delay=0, channel='music')
 
     "We each received a plate with some meat and vegetables."
 
@@ -259,12 +277,21 @@ label chapter2_3_the_discussion:
 
     nivi "..."
 
-    show nivi maid basic28 brows3 eyes8 mouth7 closed mouth open eyes
-    with Dissolve(0.1)
+    show nivi maid basic28 brows3 eyes8 mouth7 closed mouth open eyes with Dissolve(0.1)
 
-    nivi "There is the difference though."
+    nivi "So there is a difference."
 
     me "I never said you were a maid."
+
+    show nivi maid basic28 brows6 eyes0 mouth6 closed mouth open eyes with Dissolve(0.1)
+
+    nivi "Really ?"
+
+    me "It was only rhetorical."
+
+    show nivi maid basic28 brows3 eyes8 mouth7 closed mouth open eyes with Dissolve(0.1)
+
+    nivi "Sure."
 
     nivi "But if I follow your logic I'm doing the same work."
 

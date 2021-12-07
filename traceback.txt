@@ -1,22 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script/chapter2/chapter2_5_the_incident.rpy", line 536, in script
-    jump chapter2_6_the_consequence
-ScriptError: could not find label 'chapter2_6_the_consequence'.
+  File "game/script/chapter2/chapter2_5_the_incident.rpy", line 601, in script
+    pause
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    renpy.pause()
+IOError: Couldn't find file 'audio/sfx/nivi sigh 2 temps.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script/chapter2/chapter2_5_the_incident.rpy", line 536, in script
-    jump chapter2_6_the_consequence
-  File "renpy/ast.py", line 1751, in execute
-    rv = renpy.game.script.lookup(target)
-  File "renpy/script.py", line 918, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'chapter2_6_the_consequence'.
+  File "game/script/chapter2/chapter2_5_the_incident.rpy", line 601, in script
+    pause
+  File "renpy/ast.py", line 2009, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1997, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    renpy.pause()
+  File "renpy/exports.py", line 1561, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3276, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3978, in interact_core
+    renpy.audio.audio.periodic()
+  File "renpy/audio/audio.py", line 1126, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "renpy/audio/audio.py", line 1104, in periodic_thread_main
+    periodic_pass()
+  File "renpy/audio/audio.py", line 1046, in periodic_pass
+    c.periodic()
+  File "renpy/audio/audio.py", line 505, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/sfx/nivi sigh 2 temps.ogg'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 Eternal Bonds 0.2
-Mon Dec  6 12:30:14 2021
+Tue Dec  7 18:05:34 2021

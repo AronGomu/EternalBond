@@ -74,7 +74,9 @@ label chapter2_4_lost:
 
     "It was time to be pissed."
 
-    "But I need to decide first."
+    "But before getting pissed, I need to find her."
+
+    "And decide how to do it."
 
     menu:
 

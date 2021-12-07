@@ -49,7 +49,7 @@ label chapter2_2_the_tour:
     scene bg city
     with Fade(1.0, 1.0, 1.0)
 
-    play music "audio/music/Orbit - Corbyn Kites.mp3" fadein 5.0 volume 0.2
+    play music "audio/music/Tranquil Spots.mp3" fadein 5.0 volume 0.2
 
     "And the flow has been followed."
 
@@ -65,7 +65,7 @@ label chapter2_2_the_tour:
 
     "But that would explain why I didn't hear about it before."
 
-    "But the strange thing is..."
+    "But the stranger thing is..."
 
     "Why would nobody already settled in this region ?"
 
@@ -73,13 +73,15 @@ label chapter2_2_the_tour:
 
     "There are no logic reasons."
 
-    "Unless there is a curse."
+    "Unless for a curse."
     
     "But if the curse was always here, why people can now settle and not before ?"
 
     "..."
 
     "I love when getting more information means getting more questions..."
+
+    "..."
 
     "Speaking about the curse, I did not feel anything yet."
 
@@ -263,7 +265,5 @@ label chapter2_2_the_tour:
     "I lied."
     
     "I'm not hungry."
-
-    "Oh well..."
 
     jump chapter2_3_the_discussion
